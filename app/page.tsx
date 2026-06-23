@@ -7,6 +7,7 @@ import { ProductsSection } from "@/components/ProductsSection";
 import { StickyScrollCards } from "@/components/StickyScrollCards";
 import { TestimonialsSection } from "@/components/TestimonialsSection";
 import { FAQSection } from "@/components/FAQSection";
+import { WalletSection } from "@/components/WalletSection";
 import { VisitSection } from "@/components/VisitSection";
 import { NewsletterSection } from "@/components/NewsletterSection";
 
@@ -107,6 +108,7 @@ export default function HomePage() {
 
       <TestimonialsSection />
       <FAQSection />
+      <WalletSection />
       <NewsletterSection />
       <VisitSection />
     </>
