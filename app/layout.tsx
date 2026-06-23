@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "@/styles/globals.css";
 import { SiteHeader } from "@/components/SiteHeader";
 import { SiteFooter } from "@/components/SiteFooter";
+import { SmoothScrollProvider } from "@/components/SmoothScrollProvider";
 import { SITE_NAME, SITE_TAGLINE } from "@/lib/constants";
 
 export const metadata: Metadata = {
@@ -20,9 +21,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className="min-h-screen antialiased bg-cream">
-        <SiteHeader />
-        <main>{children}</main>
-        <SiteFooter />
+        <SmoothScrollProvider>
+          <SiteHeader />
+          <main>{children}</main>
+          <SiteFooter />
+        </SmoothScrollProvider>
       </body>
     </html>
   );
