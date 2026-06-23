@@ -19,9 +19,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className="min-h-screen antialiased">
+      <body className="min-h-screen antialiased bg-cream">
         <SiteHeader />
-        <main className="max-w-3xl mx-auto px-6 py-12">{children}</main>
+        <main>{children}</main>
         <SiteFooter />
       </body>
     </html>
